@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #000000;
+  background-color: white;
+}
+
+header .header__top {
+  padding: 10px 40px;
+  background-color: #000000;
+}
+header .header__top a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #F6F6F6;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: all 0.2s;
+}
+header .header__top a:hover {
+  color: #F8B653;
+}
+header .header__bottom a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+}
+header .header__bottom a::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #F8B653;
+  transform: scaleX(0);
+  transition: 0.5s;
+}
+header .header__bottom a:hover {
+  font-size: 20px;
+  font-weight: 400;
+  color: #F8B653;
+}
+header .header__bottom a:hover::after {
+  transform: scaleX(1);
+}
+header .header__bottom .active a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #F8B653;
+}
+header .header__bottom .active a::after {
+  transform: scaleX(1);
+  background-color: #F8B653;
+}
+
+.carousel__shoes .carousel__content {
+  background-image: url("../../images/image6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel__shoes .carousel__content .carousel__item {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px;
+}
+.carousel__shoes .carousel__content .carousel__item img {
+  max-width: 100%;
+  height: auto;
+}
+.carousel__shoes .carousel__content .carousel__item .carousel__info h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #F50E0E;
+}
+.carousel__shoes .carousel__content .carousel__item .carousel__info p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+.carousel__shoes .carousel__content .carousel__item .btnBuyNow {
+  background-color: #F8B653;
+  color: #F6F6F6;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.carousel__shoes .carousel__content .carousel__item .btnBuyNow:hover {
+  background-color: transparent;
+  border: solid #F8B653 1px;
+  color: #F8B653;
+}
+.carousel__shoes .carousel__content .slick-dots li button:before {
+  font-size: 40px;
+}
+
+.product__feature {
+  width: 90%;
+  margin: auto;
+}
+.product__feature h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin: 25px 0;
+}
+.product__feature .shoes__product {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.product__feature .shoes__product .shoes__item {
+  position: relative;
+  width: 30%;
+  margin: 10px;
+  transition: all 0.2s;
+}
+.product__feature .shoes__product .shoes__item .item__top {
+  background-color: #F8F8F8;
+  padding-bottom: 50px;
+}
+.product__feature .shoes__product .shoes__item .item__top .img__shoes {
+  text-align: center;
+}
+.product__feature .shoes__product .shoes__item .item__top .shoes__script {
+  padding: 20px;
+}
+.product__feature .shoes__product .shoes__item .item__top .shoes__script h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.5s;
+}
+.product__feature .shoes__product .shoes__item .item__top .shoes__script p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #CBC9C9;
+  margin: 0;
+}
+.product__feature .shoes__product .shoes__item .item__bottom {
+  background-color: #DEDDDC;
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  bottom: 0;
+}
+.product__feature .shoes__product .shoes__item .item__bottom button {
+  background-color: #F8B653;
+  color: #F6F6F6;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F6F6F6;
+  border-radius: 0;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  bottom: 0;
+}
+.product__feature .shoes__product .shoes__item .item__bottom button:hover {
+  background-color: transparent;
+  border: solid #F8B653 1px;
+  color: #F8B653;
+}
+.product__feature .shoes__product .shoes__item .item__bottom p {
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  position: absolute;
+  right: 20%;
+  bottom: -20%;
+}
+.product__feature .shoes__product .shoes__item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.product__feature .shoes__product .shoes__item:hover .shoes__script h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #F8B653;
+}
+
+.footer__shoes {
+  margin-top: 70px;
+}
+.footer__shoes .footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+.footer__shoes .footer__top .get__help h4, .footer__shoes .footer__top .orders h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer__shoes .footer__top .get__help li, .footer__shoes .footer__top .orders li {
+  list-style: none;
+}
+.footer__shoes .footer__top .get__help li a, .footer__shoes .footer__top .orders li a {
+  text-decoration: none;
+  color: #000000;
+  transition: all 0.5s;
+}
+.footer__shoes .footer__top .get__help li a:hover, .footer__shoes .footer__top .orders li a:hover {
+  color: #F8B653;
+}
+.footer__shoes .footer__top .orders {
+  height: 100%;
+  border-left: 1px solid #DEDDDC;
+  padding-left: 20px;
+}
+.footer__shoes .footer__top .register {
+  width: 50%;
+  height: 100%;
+  border-left: 1px solid #DEDDDC;
+  padding-left: 20px;
+}
+.footer__shoes .footer__top .register h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer__shoes .footer__top .register a {
+  text-decoration: none;
+  color: #F50E0E;
+}
+.footer__shoes .footer__bottom {
+  background-color: #DEDDDC;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  padding: 40px 10%;
+}
+.footer__shoes .footer__bottom .sign__up, .footer__shoes .footer__bottom .stores__near, .footer__shoes .footer__bottom .gift__cards {
+  width: 30%;
+}
+.footer__shoes .footer__bottom .sign__up h4, .footer__shoes .footer__bottom .stores__near h4, .footer__shoes .footer__bottom .gift__cards h4 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+}
+.footer__shoes .footer__bottom .sign__up a, .footer__shoes .footer__bottom .stores__near a, .footer__shoes .footer__bottom .gift__cards a {
+  text-decoration: none;
+  color: #F50E0E;
+}
+.footer__shoes .footer__bottom .gift__cards {
+  height: 100%;
+  border-left: 1px solid #F6F6F6;
+  padding-left: 20px;
+}
+.footer__shoes .footer__bottom .stores__near {
+  height: 100%;
+  border-left: 1px solid #F6F6F6;
+  padding-left: 20px;
+}
+
+.detail__product {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  margin: auto;
+}
+.detail__product .detail__img {
+  width: 50%;
+}
+.detail__product .detail__content {
+  width: 50%;
+}
+.detail__product .detail__content h4 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #F50E0E;
+}
+.detail__product .detail__content p:nth-child(3) {
+  font-size: 20px;
+  font-weight: 600;
+  color: #F8B653;
+}
+.detail__product .detail__content ul {
+  display: flex;
+  justify-content: flex-start;
+}
+.detail__product .detail__content ul li {
+  list-style: none;
+  margin-right: 20px;
+  background-color: #F8B653;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+.detail__product .detail__content ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+}
+.detail__product .detail__content ul li:hover {
+  background-color: #F50E0E;
+}
+.detail__product .detail__content p:nth-child(5) {
+  font-size: 24px;
+  font-weight: 600;
+  color: #F50E0E;
+  margin-left: 15%;
+}
+.detail__product .form-group {
+  width: 40%;
+}
+.detail__product .form-group span {
+  background-color: #F8B653;
+  transition: all 0.2s;
+}
+.detail__product .form-group span:hover {
+  background-color: #F50E0E;
+}
+.detail__product .btnAdd {
+  background-color: #F8B653;
+  color: #F6F6F6;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.5s;
+  background-color: #F50E0E;
+}
+.detail__product .btnAdd:hover {
+  background-color: transparent;
+  border: solid #F8B653 1px;
+  color: #F8B653;
+}
+
+.register__part {
+  background-color: #DEDDDC;
+  padding: 40px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+.register__part h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #F50E0E;
+  text-align: center;
+}
+.register__part .register__content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.register__part .register__content .register__left, .register__part .register__content .register__right {
+  margin: 0 10px;
+}
+.register__part .register__content .register__left input, .register__part .register__content .register__right input {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #F8B653;
+}
+.register__part .register__content .register__right {
+  text-align: center;
+}
+.register__part .register__content .register__right .gender__input {
+  margin: 10px 0;
+}
+.register__part .register__content .register__right .gender__input input {
+  display: inline;
+}
+.register__part .register__content .register__right #btnSub {
+  background-color: #F8B653;
+  color: #F6F6F6;
+  width: 150px;
+  cursor: pointer;
+  transition: all 0.5s;
+  align-items: center;
+}
+.register__part .register__content .register__right #btnSub:hover {
+  background-color: transparent;
+  border: solid #F8B653 1px;
+  color: #F8B653;
+}/*# sourceMappingURL=main.css.map */

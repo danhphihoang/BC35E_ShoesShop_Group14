@@ -1,0 +1,37 @@
+.carousel__shoes {
+    .carousel__content {
+        background-image: url("../../images/image6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .carousel__item {
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            padding: $pd-3;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .carousel__info {
+                h1 {
+                    @include styleText($fs-4, $fw-3, $color-red);
+                }
+
+                p {
+                    @include styleText($fs-2, $fw-2, $color-black);
+                }
+            }
+
+            .btnBuyNow {
+                @include styleBtn();
+            }
+        }
+        .slick-dots li button:before{
+            font-size: $fs-4;
+        }
+    }
+}

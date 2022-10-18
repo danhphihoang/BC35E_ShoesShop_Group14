@@ -1,0 +1,24 @@
+@mixin styleText($fs,$fw,$color) {
+    font-size:$fs ;
+    font-weight:$fw ;
+    color:$color ;
+}
+@mixin styleBtn(){
+    background-color: $color-orange;
+            color: $color-white-1;
+            width: 150px;
+            cursor: pointer;
+            transition: all 0.5s;
+    
+            &:hover {
+                background-color: transparent;
+                border: solid $color-orange 1px;
+                color:$color-orange;
+    
+            } 
+}
+
+@mixin styleInput(){
+    padding: $pd-1;
+    border: 1px solid $color-orange;
+}

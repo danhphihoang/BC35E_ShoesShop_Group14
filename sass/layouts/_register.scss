@@ -1,0 +1,48 @@
+    .register__part {
+        background-color: $color-grey-2;
+        padding: $pd-3;
+        border-radius: 10px;
+        width: 50%;
+        margin: auto;
+
+        h3 {
+            @include styleText($fs-4, $fw-3, $color-red);
+            text-align: center;
+        }
+
+        .register__content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .register__left {
+                margin: 0 $mg-1;
+
+                input {
+                    display: block;
+                    margin: $mg-1 0;
+                    @include styleInput;
+                }
+
+            }
+
+            .register__right {
+                @extend .register__left;
+                text-align: center;
+
+                .gender__input {
+                    margin: $mg-1 0;
+
+                    input {
+                        display: inline;
+                    }
+                }
+
+                #btnSub {
+                    @include styleBtn;
+                    align-items: center;
+                }
+            }
+        }
+
+    }

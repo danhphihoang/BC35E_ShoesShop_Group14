@@ -1,0 +1,14 @@
+// GLOBAL
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Inter', sans-serif;
+    font-size: $fs-2;
+    font-weight: $fw-1;
+    color:$color-black;
+    background-color: $color-white-4;
+}

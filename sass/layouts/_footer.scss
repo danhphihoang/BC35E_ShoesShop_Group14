@@ -1,0 +1,94 @@
+.footer__shoes {
+    margin-top: $mg-3;
+
+    .footer__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 80%;
+        margin: auto;
+        padding: $pd-2 0;
+
+        .get__help {
+
+            h4 {
+                @include styleText($fs-3, $fw-3, $color-black);
+            }
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: $color-orange;
+                    }
+                }
+            }
+        }
+
+        .orders {
+            height: 100%;
+            border-left: 1px solid $color-grey-2;
+            padding-left: 20px;
+            @extend .get__help;
+        }
+
+        .register {
+            width: 50%;
+            height: 100%;
+            border-left: 1px solid $color-grey-2;
+            padding-left: 20px;
+
+            h4 {
+                @include styleText($fs-3, $fw-3, $color-black);
+            }
+
+            a {
+                text-decoration: none;
+                color: $color-red;
+
+            }
+
+        }
+    }
+
+    .footer__bottom {
+        background-color: $color-grey-2;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin: auto;
+        padding: $pd-3 10%;
+
+        .sign__up {
+            width: 30%;
+
+            h4 {
+                @include styleText($fs-3, $fw-3, $color-black);
+            }
+
+            a {
+                text-decoration: none;
+                color: $color-red;
+            }
+        }
+
+        .gift__cards {
+            height: 100%;
+            border-left: 1px solid $color-white-1;
+            padding-left: 20px;
+            @extend .sign__up;
+        }
+
+        .stores__near {
+            height: 100%;
+            border-left: 1px solid $color-white-1;
+            padding-left: 20px;
+            @extend .sign__up;
+        }
+    }
+}

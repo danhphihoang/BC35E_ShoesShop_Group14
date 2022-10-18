@@ -1,0 +1,88 @@
+.product__feature {
+    width: 90%;
+    margin: auto;
+
+    h3 {
+        @include styleText($fs-4, $fw-3, $color-black);
+        text-align: center;
+        margin: $mg-2 0;
+    }
+
+    .shoes__product {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .shoes__item {
+            position: relative;
+            width: 30%;
+            margin: $mg-1;
+            transition: all 0.2s;
+
+
+            .item__top {
+                background-color: $color-white-3;
+                padding-bottom: 50px;
+
+                .img__shoes {
+                    text-align: center;
+                }
+
+                .shoes__script {
+                    padding: $pd-2;
+
+                    h4 {
+                        @include styleText($fs-3, $fw-3, $color-black);
+                        transition: all 0.5s;
+                    }
+
+                    p {
+                        @include styleText($fs-2, $fw-1, $color-grey-1);
+                        margin: 0;
+                    }
+                }
+            }
+
+            .item__bottom {
+                background-color: $color-grey-2;
+                position: absolute;
+                width: 100%;
+                height: 8%;
+                bottom: 0;
+
+                button {
+                    @include styleBtn();
+                    @include styleText($fs-2, $fw-3, $color-white-1);
+                    border-radius: 0;
+                    position: absolute;
+                    height: 100%;
+                    width: 50%;
+                    bottom: 0;
+                }
+
+                p {
+                    display: inline;
+                    @include styleText($fs-2, $fw-3, $color-black);
+                    position: absolute;
+                    right: 20%;
+                    bottom: -20%;
+
+                }
+            }
+
+            &:hover {
+                box-shadow: 0px 4px 4px $color-shadow;
+
+                .shoes__script {
+
+                    h4 {
+                        @include styleText($fs-3, $fw-3, $color-orange);
+                    }
+                }
+
+            }
+        }
+
+    }
+
+}
